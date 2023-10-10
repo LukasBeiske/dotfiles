@@ -26,21 +26,22 @@ source $ZSH/oh-my-zsh.sh
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/opt/conda/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+__conda_setup="$('/home/LukasBeiske/.local/mambaforge/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/opt/conda/etc/profile.d/conda.sh" ]; then
-        . "/opt/conda/etc/profile.d/conda.sh"
+    if [ -f "/home/LukasBeiske/.local/mambaforge/etc/profile.d/conda.sh" ]; then
+        . "/home/LukasBeiske/.local/mambaforge/etc/profile.d/conda.sh"
     else
-        export PATH="/opt/conda/bin:$PATH"
+        export PATH="/home/LukasBeiske/.local/mambaforge/bin:$PATH"
     fi
 fi
 unset __conda_setup
 
-if [ -f "/opt/conda/etc/profile.d/mamba.sh" ]; then
-    . "/opt/conda/etc/profile.d/mamba.sh"
+if [ -f "/home/LukasBeiske/.local/mambaforge/etc/profile.d/mamba.sh" ]; then
+    . "/home/LukasBeiske/.local/mambaforge/etc/profile.d/mamba.sh"
 fi
 # <<< conda initialize <<<
 
 mamba activate
+eval "$(atuin init zsh)"

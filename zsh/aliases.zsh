@@ -1,6 +1,8 @@
 # Goes here: ~/.oh-my-zsh/custom/
 alias la='ls -CFA'
 alias ll='ls -CFAlh --group-directories-first'
+alias le='eza -alF --icons --group-directories-first'
+alias lt='eza -alF --icons --group-directories-first --tree'
 
 alias ..='cd ..'
 alias ...='cd ../..'
