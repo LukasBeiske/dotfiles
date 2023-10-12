@@ -10,8 +10,6 @@ alias ....='cd ../../..'
 
 alias count='find . -type f | wc -l'
 
-alias zshconfig='nvim ~/.zshrc'
-alias p10kconfig='nvim ~/.p10k.zsh'
 alias aliasconfig='nvim ~/.oh-my-zsh/custom/aliases.zsh'
 
 alias lab='jupyter lab --ip vollmond --no-browser'
