@@ -9,8 +9,8 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 
 alias count='find . -type f | wc -l'
-
 alias aliasconfig='nvim ~/.oh-my-zsh/custom/aliases.zsh'
+alias rubvpn='sudo openvpn /etc/openvpn/RUBvpn_Standard.ovpn'
 
 alias lab='jupyter lab --ip vollmond --no-browser'
 alias lab_phobos='jupyter lab --ip phobos --no-browser'
@@ -19,8 +19,9 @@ alias lab_remote='jupyter lab --port 8893 --no-browser'
 alias gits='git status -s'
 
 alias smd='conda activate smd_uebungen; cd ~/SMD'
+alias ctadev='conda activate cta-dev; cd ~/cta/ctapipe'
 
-viewpdf () {
+vpdf () {
   file=${1}
   evince $file &
 }
