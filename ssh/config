@@ -1,0 +1,42 @@
+Host phobos
+  Hostname phobos.app.tu-dortmund.de
+  User lbeiske
+  IdentityFile ~/.ssh/id_ed25519.physik
+  IdentitiesOnly yes
+  ForwardX11 yes
+  ForwardX11Trusted yes
+  ProxyJump applogin
+
+Host vollmond
+  Hostname vollmond.app.tu-dortmund.de
+  User lbeiske
+  IdentityFile ~/.ssh/id_ed25519.physik
+  IdentitiesOnly yes
+  ForwardX11 yes
+  ForwardX11Trusted yes
+  ProxyJump applogin
+
+Host applogin
+  Hostname login.app.tu-dortmund.de
+  User lbeiske
+  IdentityFile ~/.ssh/id_ed25519.physik
+  IdentitiesOnly yes
+  ForwardX11 yes
+  ForwardX11Trusted yes
+
+Host lst-it
+  Hostname 161.72.87.1
+  User CtAlAPaLmA
+  IdentityFile ~/.ssh/id_rsa_lst
+  IdentitiesOnly yes
+  ProxyJump applogin
+  LocalForward 28080 tcs05:28080
+  LocalForward 38080 tcs06:38080
+
+Host cp*
+  User lukas.beiske
+  IdentityFile ~/.ssh/id_ed25519_lst_home
+  IdentitiesOnly yes
+  ProxyJump lst-it
+
+
