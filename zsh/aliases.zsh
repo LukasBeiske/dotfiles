@@ -12,9 +12,9 @@ alias count='find . -type f | wc -l'
 alias aliasconfig='nvim ~/.oh-my-zsh/custom/aliases.zsh'
 alias rubvpn='sudo openvpn /etc/openvpn/RUBvpn_Standard.ovpn'
 
-# alias lab='jupyter lab --ip vollmond --no-browser'
-# alias lab_phobos='jupyter lab --ip phobos --no-browser'
-# alias lab_remote='jupyter lab --port 8893 --no-browser'
+# alias jupyter_vollmond='jupyter lab --ip vollmond --no-browser'
+# alias jupyter_phobos='jupyter lab --ip phobos --no-browser'
+# alias jupyter_remote='jupyter lab --port 8893 --no-browser'
 
 alias gits='git status -s'
 
