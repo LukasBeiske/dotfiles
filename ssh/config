@@ -1,3 +1,11 @@
+Host applogin
+  Hostname login.app.tu-dortmund.de
+  User lbeiske
+  IdentityFile ~/.ssh/id_ed25519.physik
+  IdentitiesOnly yes
+  ForwardX11 yes
+  ForwardX11Trusted yes
+
 Host phobos
   Hostname phobos.app.tu-dortmund.de
   User lbeiske
@@ -16,13 +24,16 @@ Host vollmond
   ForwardX11Trusted yes
   ProxyJump applogin
 
-Host applogin
-  Hostname login.app.tu-dortmund.de
+Host infra-1
+  Hostname infra-1.e5.physik.tu-dortmund.de
+  User cloudadmin
+
+Host home
+  Hostname home.e5.physik.tu-dortmund.de
   User lbeiske
   IdentityFile ~/.ssh/id_ed25519.physik
   IdentitiesOnly yes
-  ForwardX11 yes
-  ForwardX11Trusted yes
+  ProxyJump applogin
 
 Host lst-it
   Hostname 161.72.87.1
