@@ -24,9 +24,15 @@ Host vollmond
   ForwardX11Trusted yes
   ProxyJump applogin
 
+Host ipmimaster
+  Hostname ipmimaster.e5.physik.tu-dortmund.de
+  User cloudadmin
+  IdentitiesOnly yes
+
 Host infra-1
   Hostname infra-1.e5.physik.tu-dortmund.de
   User cloudadmin
+  IdentitiesOnly yes
 
 Host home
   Hostname home.e5.physik.tu-dortmund.de
