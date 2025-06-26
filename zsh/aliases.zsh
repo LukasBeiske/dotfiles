@@ -28,3 +28,11 @@ lab_remote () {
     jupyter lab --no-browser --port=8890
   fi
 }
+
+portforward () {
+  if [[ -n $* ]]; then
+    ssh -fNL ${1}:localhost:${2} lbeiske@${3}
+  else
+    ssh -fNL 8890:localhost:8890 lbeiske@vollmond
+  fi
+}
