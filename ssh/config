@@ -6,17 +6,8 @@ Host applogin
   ForwardX11 yes
   ForwardX11Trusted yes
 
-Host phobos
-  Hostname phobos.app.tu-dortmund.de
-  User lbeiske
-  IdentityFile ~/.ssh/id_ed25519.physik
-  IdentitiesOnly yes
-  ForwardX11 yes
-  ForwardX11Trusted yes
-  ProxyJump applogin
-
-Host vollmond
-  Hostname vollmond.app.tu-dortmund.de
+Host phobos vollmond
+  Hostname %h.app.tu-dortmund.de
   User lbeiske
   IdentityFile ~/.ssh/id_ed25519.physik
   IdentitiesOnly yes
